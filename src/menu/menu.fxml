@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="menu.MenuController">
+    <children>
+        <BorderPane layoutX="249.0" layoutY="45.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <top>
+                <MenuBar BorderPane.alignment="CENTER">
+                    <menus>
+                        <Menu mnemonicParsing="false" text="Файл">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Закрыть" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Заказы">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#selectOrderTab" text="Просмотреть все заказы" />
+                                <MenuItem mnemonicParsing="false" text="Просмотреть статистику" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Товары">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#selectCatalogTab" text="Просмотреть каталог товаров" />
+                                <MenuItem mnemonicParsing="false" onAction="#selectCatalogInNewTab" text="Открыть каталог в новом окне" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Помощь">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#info" text="О программе" />
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+            </top>
+            <center>
+                <TabPane fx:id="tabPane" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+                    <tabs>
+                        <Tab fx:id="catalogTab" text="Товары">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                            </content>
+                        </Tab>
+                        <Tab fx:id="ordersTab" text="Заказы">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                            </content>
+                        </Tab>
+                    </tabs>
+                </TabPane>
+            </center>
+            <bottom>
+                <Label text="Данное приложение создал студент группы 09-052 Кудашко Никита Викторович" BorderPane.alignment="CENTER" />
+            </bottom>
+        </BorderPane>
+    </children>
+</AnchorPane>

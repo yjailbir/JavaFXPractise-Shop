@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SampleController">
+   <Label layoutX="163.0" layoutY="138.0" text="Логин" />
+   <Label layoutX="155.0" layoutY="171.0" text="Пароль" />
+   <TextField fx:id="textField1" layoutX="217.0" layoutY="134.0" />
+   <TextField fx:id="textField2" layoutX="217.0" layoutY="167.0" />
+   <Button layoutX="217.0" layoutY="206.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="63.0" text="Вход" textAlignment="CENTER" />
+   <Label fx:id="label1" layoutX="241.0" layoutY="282.0" prefHeight="45.0" prefWidth="101.0" textAlignment="JUSTIFY" />
+   <Button layoutX="303.0" layoutY="206.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="63.0" text="Отмена" onAction="#handleCancel"/>
+   <Hyperlink layoutX="232.0" layoutY="242.0" text="Зарегистрироваться" onAction="#handleLinkAction"/>
+</AnchorPane>

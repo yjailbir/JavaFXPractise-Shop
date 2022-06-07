@@ -1,0 +1,1 @@
+A simple appication which imitates interface of shop 
